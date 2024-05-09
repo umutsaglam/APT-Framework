@@ -8,7 +8,7 @@ if os.path.exists('/data/data/com.termux/files'):
     pass
 else:
     if os.geteuid() != 0: 
-        exit("Bu betiği çalıştırmak için kök ayrıcalıklarına sahip olmalısınız.")
+        exit("Bu betiği çalıştırmak için root olmalısınız.")
         sys.exit()
 
 inp = input('APT-Framework\'i Kaldırmak İstediğinizden Emin Misiniz? (evet/hayır) = ')
